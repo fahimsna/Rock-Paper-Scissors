@@ -1,33 +1,107 @@
 # 🪨 Rock Paper Scissors ✂️
 
-A modern, responsive **Rock Paper Scissors** game built with vanilla HTML, CSS, and JavaScript.
+A modern and responsive **Rock Paper Scissors** game built with vanilla HTML, CSS, and JavaScript.
 
-The project started as an early JavaScript project and has been redesigned with a modern arcade-style interface while keeping the original game functionality simple and lightweight.
+This project was originally created as a JavaScript practice project and later redesigned with a modern arcade-inspired interface, responsive layouts, animations, and improved user experience.
 
 ## 🎮 Live Demo
 
-**[Play Rock Paper Scissors](https://fahimsna.github.io/Rock-Paper-Scissors/)**
+👉 **[Play Rock Paper Scissors](https://rock-paper-scissors-zeta-dun.vercel.app/)**
+
+---
 
 ## ✨ Features
 
-* 🪨 Rock, Paper, and Scissors gameplay
-* 🤖 Computer opponent
-* 🏆 Real-time score tracking
-* 🔄 New Game / Reset functionality
-* ✨ Interactive hover and visual effects
-* 🌌 Modern dark arcade-style UI
-* 📱 Fully responsive design
-* ⌨️ Keyboard-focus support
-* ♿ Accessible interactive controls
-* ⚡ No frameworks or dependencies required
+- 🪨 Rock, Paper, and Scissors gameplay
+- 🤖 Computer opponent
+- 🏆 Real-time score tracking
+- 🔄 New Game / Reset functionality
+- 🎯 Instant round results
+- ✨ Interactive hover effects
+- 🌌 Modern dark arcade-style interface
+- 📱 Fully responsive design
+- 💻 Desktop, tablet, and mobile support
+- ⌨️ Keyboard-accessible game choices
+- ⚡ Lightweight and fast
+- 🚫 No frameworks or external dependencies
+
+---
 
 ## 🛠️ Technologies
 
-* **HTML5** — page structure
-* **CSS3** — responsive design, animations, gradients, and visual effects
-* **JavaScript** — game logic and DOM interaction
+| Technology | Purpose |
+|---|---|
+| **HTML5** | Page structure and semantic markup |
+| **CSS3** | Responsive design, animations, gradients, and UI styling |
+| **JavaScript** | Game logic, random computer moves, score tracking, and DOM interaction |
+| **Vercel** | Deployment and hosting |
 
-## 📁 Project Structure
+---
+
+## 🎮 How to Play
+
+Choose one of the three available moves:
+
+| Move | Beats |
+|---|---|
+| 🪨 **Rock** | ✂️ Scissors |
+| 📄 **Paper** | 🪨 Rock |
+| ✂️ **Scissors** | 📄 Paper |
+
+### Game Rules
+
+1. Choose **Rock**, **Paper**, or **Scissors**.
+2. The computer randomly selects its move.
+3. The winner is determined according to the classic Rock Paper Scissors rules.
+4. If both players choose the same move, the round is a draw.
+5. Your score updates automatically.
+
+---
+
+## 📱 Responsive Design
+
+The interface is designed to work across different screen sizes.
+
+### Desktop
+
+The three choices are displayed as large interactive cards.
+
+### Tablet
+
+The layout automatically adapts to provide better spacing and usability.
+
+### Mobile
+
+The game choices transform into compact horizontal cards so that all content remains visible without unnecessary horizontal scrolling.
+
+Supported screen sizes include:
+
+- 🖥️ Desktop
+- 💻 Laptop
+- 📱 Tablet
+- 📱 Mobile
+- 📱 Small mobile screens
+
+---
+
+## 🎨 UI Highlights
+
+The redesigned interface includes:
+
+- Glassmorphism-inspired cards
+- Animated background elements
+- Gradient typography
+- Interactive game cards
+- Individual visual styling for each move
+- Responsive layouts
+- Modern scoreboard
+- Animated reset button
+- Mobile-first adjustments
+- Reduced-motion support
+
+---
+
+## 📂 Project Structure
 
 ```text
 Rock-Paper-Scissors/
@@ -42,71 +116,3 @@ Rock-Paper-Scissors/
 │   └── scissors.png
 │
 └── README.md
-```
-
-## 🚀 Run Locally
-
-Clone the repository:
-
-```bash
-git clone https://github.com/fahimsna/Rock-Paper-Scissors.git
-```
-
-Move into the project:
-
-```bash
-cd Rock-Paper-Scissors
-```
-
-Then open `index.html` in your browser.
-
-You can also use VS Code's **Live Server** extension for local development.
-
-## 🎯 How to Play
-
-1. Choose **Rock**, **Paper**, or **Scissors**.
-2. The computer randomly selects its move.
-3. The winner is determined by the classic rules:
-
-| Your Move   | Beats       |
-| ----------- | ----------- |
-| 🪨 Rock     | ✂️ Scissors |
-| 📄 Paper    | 🪨 Rock     |
-| ✂️ Scissors | 📄 Paper    |
-
-If both players choose the same move, the round is a draw.
-
-## 📱 Responsive Design
-
-The interface adapts to different screen sizes:
-
-* Desktop
-* Laptop
-* Tablet
-* Mobile
-* Small mobile screens
-
-The game cards automatically change layout on smaller screens to keep all content visible and easy to interact with.
-
-## 📌 Project Background
-
-This project was originally created as an early JavaScript practice project.
-
-It was later revisited and redesigned to improve:
-
-* User experience
-* Responsive design
-* Visual presentation
-* Accessibility
-* Code organization
-* Portfolio quality
-
-## 👨‍💻 Author
-
-**Fahim Shahriar**
-
-GitHub: **[@fahimsna](https://github.com/fahimsna)**
-
-## 📄 License
-
-This project is open source and available for educational and personal use.
