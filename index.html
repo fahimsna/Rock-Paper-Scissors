@@ -3,38 +3,193 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors Game</title>
+
+    <meta
+      name="description"
+      content="A modern Rock Paper Scissors game built with HTML, CSS and JavaScript."
+    />
+
+    <title>Rock Paper Scissors</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1>Rock Paper Scissors</h1>
-    <div class="choices">
-      <div class="choice" id="rock">
-        <img src="./images/rock-2.png" alt="rock" />
-      </div>
-      <div class="choice" id="paper">
-        <img src="./images/paper-2.png" alt="paper" />
-      </div>
-      <div class="choice" id="scissors">
-        <img src="images/scissors.png"  alt="scissors"/>
-      </div>
+    <div class="background">
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
+      <div class="orb orb-three"></div>
     </div>
-    <div class="scoreBoard">
-      <div class="score">
-        <p id="userScore">0</p>
-        <p>You</p>
+
+    <main class="game">
+      <!-- Header -->
+      <header class="game-header">
+        <div class="brand">
+          <span class="brand-icon">✦</span>
+          <span>ARCADE</span>
+        </div>
+
+        <h1>
+          Rock
+          <span>Paper</span>
+          Scissors
+        </h1>
+
+        <p>Make your move. Outsmart the computer.</p>
+      </header>
+
+      <!-- Score -->
+      <section class="score-card">
+        <div class="score-player">
+          <span class="score-label">PLAYER</span>
+          <span class="score-name">YOU</span>
+          <strong id="userScore">0</strong>
+        </div>
+
+        <div class="score-middle">
+          <span class="score-line"></span>
+
+          <div class="vs">VS</div>
+
+          <span class="score-line"></span>
+        </div>
+
+        <div class="score-player">
+          <span class="score-label">OPPONENT</span>
+          <span class="score-name">CPU</span>
+          <strong id="computerScore">0</strong>
+        </div>
+      </section>
+
+      <!-- Game -->
+      <section class="game-section">
+        <div class="section-title">
+          <span class="section-number">01</span>
+
+          <div>
+            <h2>Choose your weapon</h2>
+            <p>Select one to play your turn</p>
+          </div>
+        </div>
+
+        <div class="choices">
+          <!-- Rock -->
+          <div
+            class="choice rock-choice"
+            id="rock"
+            role="button"
+            tabindex="0"
+            aria-label="Choose Rock"
+          >
+            <div class="choice-glow"></div>
+
+            <div class="choice-top">
+              <span>01</span>
+              <span>ROCK</span>
+            </div>
+
+            <div class="choice-image">
+              <img src="./images/rock-2.png" alt="Rock" />
+            </div>
+
+            <div class="choice-bottom">
+              <span>ROCK</span>
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- Paper -->
+          <div
+            class="choice paper-choice"
+            id="paper"
+            role="button"
+            tabindex="0"
+            aria-label="Choose Paper"
+          >
+            <div class="choice-glow"></div>
+
+            <div class="choice-top">
+              <span>02</span>
+              <span>PAPER</span>
+            </div>
+
+            <div class="choice-image">
+              <img src="./images/paper-2.png" alt="Paper" />
+            </div>
+
+            <div class="choice-bottom">
+              <span>PAPER</span>
+              <span>→</span>
+            </div>
+          </div>
+
+          <!-- Scissors -->
+          <div
+            class="choice scissors-choice"
+            id="scissors"
+            role="button"
+            tabindex="0"
+            aria-label="Choose Scissors"
+          >
+            <div class="choice-glow"></div>
+
+            <div class="choice-top">
+              <span>03</span>
+              <span>SCISSORS</span>
+            </div>
+
+            <div class="choice-image">
+              <img src="./images/scissors.png" alt="Scissors" />
+            </div>
+
+            <div class="choice-bottom">
+              <span>SCISSORS</span>
+              <span>→</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Result -->
+      <section class="result-section">
+        <div class="result-decoration">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="result-box">
+          <span class="result-label"> CURRENT ROUND </span>
+
+          <p id="msg">Make your move</p>
+        </div>
+
+        <div class="result-decoration">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <!-- Reset -->
+      <div class="reset">
+        <button class="reset1" id="reset" type="button">
+          <span class="reset-symbol">↻</span>
+
+          <span> New Game </span>
+        </button>
       </div>
-      <div class="score">
-        <p id="computerScore">0</p>
-        <p>Computer</p>
-      </div>
-    </div>
-    <div class="msgContainer">
-      <p id="msg">Play your move</p>
-    </div>
-    <div class="reset">
-      <button class="reset1" id="reset">Reset Game</button>
-    </div>
+
+      <!-- Footer -->
+      <footer class="game-footer">
+        <span>ROCK</span>
+        <i></i>
+        <span>PAPER</span>
+        <i></i>
+        <span>SCISSORS</span>
+      </footer>
+    </main>
+
     <script src="app.js"></script>
   </body>
 </html>
